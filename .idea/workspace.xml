@@ -45,8 +45,8 @@
       <change afterPath="$PROJECT_DIR$/../velo-3d/app/components/BikeScene.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../velo-3d/app/components/WheelSelector.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../velo-3d/public/models/wheels/sport.glb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/docker.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +143,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1783157028624</updated>
-      <workItem from="1783157029640" duration="14873000" />
+      <workItem from="1783157029640" duration="15111000" />
     </task>
     <servers />
   </component>
