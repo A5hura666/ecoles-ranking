@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75797923-889a-40dd-8d89-cb1ba69dc10b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../side-project/nuxt-rag-app/assets/css/tailwind.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../side-project/nuxt-rag-app/pages/login.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../side-project/nuxt-rag-app/pages/register.vue" afterDir="false" />
@@ -45,10 +46,8 @@
       <change afterPath="$PROJECT_DIR$/../velo-3d/app/components/BikeScene.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../velo-3d/app/components/WheelSelector.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../velo-3d/public/models/wheels/sport.glb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/AllSchoolsPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/AllSchoolsPanel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SchoolMiniMap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/SchoolMiniMap.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,24 +112,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
-    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ethan-pro/Documents/Personnel/Informatique/Github/ecoles-classement&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/ethan-pro/Documents/Personnel/Informatique/Github/ecoles-classement/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
+    "last_opened_file_path": "/Users/ethan-pro/Documents/Personnel/Informatique/Github/ecoles-classement/public",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/ethan-pro/Documents/Personnel/Informatique/Github/ecoles-classement/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.Next.js: server-side">
     <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
@@ -161,7 +166,7 @@
       <option name="presentableId" value="Default" />
       <updated>1783157028624</updated>
       <workItem from="1783157029640" duration="15555000" />
-      <workItem from="1783181209524" duration="1114000" />
+      <workItem from="1783181209524" duration="1527000" />
     </task>
     <servers />
   </component>
