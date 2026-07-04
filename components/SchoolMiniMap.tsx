@@ -30,6 +30,8 @@ interface Props {
  *  d'interférer avec le drag natif de la ligne entière dans RankingPanel. */
 export default function SchoolMiniMap({ lat, lon, onSelect, className = "" }: Props) {
     const { ref, inView } = useInView<HTMLDivElement>();
+    const sizeClasses =
+        className || "h-40 flex-1 min-w-0 sm:flex-none sm:w-56 sm:h-44";
 
     return (
         <div
@@ -44,9 +46,9 @@ export default function SchoolMiniMap({ lat, lon, onSelect, className = "" }: Pr
                     onSelect();
                 }
             }}
-            className={`group relative w-full h-40 sm:w-56 sm:h-44 shrink-0 rounded-sm overflow-hidden border border-line bg-wheat/20 ${
+            className={`group relative shrink-0 rounded-sm overflow-hidden border border-line bg-wheat/20 ${
                 onSelect ? "cursor-pointer" : ""
-            } ${className}`}
+            } ${sizeClasses}`}
         >
             {inView ? (
                 <div className="w-full h-full pointer-events-none">

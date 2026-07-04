@@ -108,7 +108,7 @@ export default function AllSchoolsPanel({
                     </div>
                 </div>
 
-                <div className="flex items-center gap-2 no-print">
+                <div className="flex items-center gap-2 flex-wrap no-print">
                     <button
                         onClick={onSelectAll}
                         className="text-sm px-3 py-2 rounded-sm border border-moss text-moss hover:bg-moss hover:text-paper transition-colors"
@@ -149,48 +149,55 @@ export default function AllSchoolsPanel({
                             key={s.id}
                             title={`${s.adresse}, ${s.codePostal} ${s.commune}`}
                             style={{ animationDelay: `${Math.min(i, 12) * 25}ms` }}
-                            className={`school-row flex items-center gap-3 border rounded-sm px-3 py-3 transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 ${
+                            className={`school-row flex flex-col sm:flex-row gap-3 border rounded-sm p-3 transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 ${
                                 rank
                                     ? "border-moss/40 bg-wheat/50"
                                     : "border-line bg-white/50 hover:bg-white"
                             }`}
                         >
-                            {rank ? (
-                                <span className="badge-pop shrink-0">
-                        <RankBadge n={rank} />
-                      </span>
-                            ) : (
-                                <span className="w-8 h-8 shrink-0" />
-                            )}
+                            <div className="flex items-start gap-3 min-w-0">
+                                {rank ? (
+                                    <span className="badge-pop shrink-0">
+        <RankBadge n={rank} />
+    </span>
+                                ) : (
+                                    <span
+                                        className="w-8 h-8 shrink-0 rounded-full border border-dashed border-line/70 flex items-center justify-center text-ink/30 text-sm"
+                                        aria-hidden="true"
+                                    >
+    +
+</span>
+                                )}
 
-                            {s.latitude && s.longitude ? (
-                                <SchoolMiniMap
-                                    lat={s.latitude}
-                                    lon={s.longitude}
-                                    onSelect={onSelectSchool ? () => onSelectSchool(s.id) : undefined}
-                                    className="w-32 h-28 md:w-56 md:h-44"
-                                />
-                            ) : (
-                                <span className="w-32 h-28 md:w-56 md:h-44 shrink-0 rounded-sm border border-line bg-wheat/20" />
-                            )}
+                                {s.latitude && s.longitude ? (
+                                    <SchoolMiniMap
+                                        lat={s.latitude}
+                                        lon={s.longitude}
+                                        onSelect={onSelectSchool ? () => onSelectSchool(s.id) : undefined}
+                                        className="h-40 flex-1 min-w-0 sm:flex-none sm:w-40 sm:h-32 md:w-56 md:h-44"
+                                    />
+                                ) : (
+                                    <span className="h-40 flex-1 min-w-0 sm:flex-none sm:w-40 sm:h-32 md:w-56 md:h-44 shrink-0 rounded-sm border border-line bg-wheat/20" />
+                                )}
+                            </div>
 
-                            <div className="flex-1 min-w-0">
+                            <div className="flex-1 min-w-0 flex flex-col justify-center gap-1">
                                 <div className="flex items-center gap-2 flex-wrap">
                                     <p className="font-display text-[15px] leading-snug text-ink truncate">
                                         {s.ecole}
                                     </p>
                                     {typeInfo && (
                                         <span className="text-[10px] uppercase tracking-wide font-medium text-moss border border-moss/40 rounded-full px-2 py-0.5 shrink-0">
-                            {typeInfo.label}
-                          </span>
+                    {typeInfo.label}
+                </span>
                                     )}
                                 </div>
-                                <p className="text-xs text-ink/60 mt-0.5 truncate">
+                                <p className="text-xs text-ink/60 truncate">
                                     {s.commune}
                                     {s.niveau ? ` · ${s.niveau}` : ""} ·{" "}
                                     <span className="font-mono">{s.circo.replace(/^IEN\s+/, "")}</span>
                                 </p>
-                                <div className="flex items-center gap-2 mt-1">
+                                <div className="flex items-center gap-2 flex-wrap">
                                     {distanceKm !== null && (
                                         <p className="text-[11px] text-ink/45 font-mono">
                                             ≈ {distanceKm.toFixed(1)} km à vol d&apos;oiseau
@@ -204,7 +211,7 @@ export default function AllSchoolsPanel({
 
                             <button
                                 onClick={() => onToggle(s.id)}
-                                className={`shrink-0 text-sm font-medium px-3 py-1.5 rounded-sm border transition-colors ${
+                                className={`shrink-0 text-sm font-medium px-3 py-1.5 rounded-sm border transition-colors w-full sm:w-auto ${
                                     rank
                                         ? "border-clay/60 text-clay hover:bg-clay hover:text-paper"
                                         : "border-moss text-moss hover:bg-moss hover:text-paper"
