@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  ecoles:
+    image: ghcr.io/a5hura666/ecoles-ranking:latest
+    container_name: ecoles
+
+    restart: unless-stopped
+
+    environment:
+      NODE_ENV: production
+
+    expose:
+      - "3000"
+
+    networks:
+      - npm
+
+networks:
+  npm:
+    external: true
