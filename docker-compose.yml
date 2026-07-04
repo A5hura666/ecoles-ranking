@@ -16,8 +16,8 @@ services:
       NEXT_PUBLIC_APP_URL: https://ecoles.ethandevfs.cloud
 
     networks:
-      - npm
+      - proxy_network
 
 networks:
-  npm:
+  proxy_network:
     external: true
